@@ -140,7 +140,7 @@ def alphabet() -> dict:
     Notes You could see an implementaion of this one in test, but create another one
     Examples:
         alphabet()
-        >>> {"a": 1, "b": 2 ...}
+        >>> {1: "a", 2: "b" ...}
     """
     my_dict = {}
     for i in range(26):
