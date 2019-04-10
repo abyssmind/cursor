@@ -160,7 +160,5 @@ def simple_sort(data: List[int]) -> List[int]:
     for i in range(len(data), 0, -1):
         for j in range(1, i):
             if data[j - 1] > data[j]:
-                tmp = data[j - 1]
-                data[j - 1] = data[j]
-                data[j] = tmp
+                data[j - 1], data[j] = data[j], data[j-1]
     return data
